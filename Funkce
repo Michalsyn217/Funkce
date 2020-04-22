@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+
+int mensi_hodnota(int a, int b) //zadava funkci
+{
+	if (a > b) //deklaruje fukci
+		return b; //popisuje vysledek
+	else 
+		return a; //popisuje vysledek
+}
+void main() // zacatek
+{
+	
+	int x, y, reseni; //nadefinovani cisel
+	printf("Napiste cislo 1: "); //vypsani 1. cisla
+	scanf_s("%i", &x); //nahrát cislo 1
+	printf("Napiste cislo 2: "); //vypsani 2. cisla
+	scanf_s("%i", &y); // nahrát cislo 2
+	reseni = mensi_hodnota(x, y); //naznaceni vysledku
+	printf("Mensi cislo je : %i", reseni); // vysledek
+
+}
